@@ -1,0 +1,7 @@
+<div>
+  <h1>{{ title }}</h1>
+  <button (click)="getTargets()">Retrieve Targets</button>
+  <ul>
+    <li *ngFor="let test of testList">{{ test.name }}</li>
+  </ul>
+</div>
