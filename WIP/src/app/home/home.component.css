@@ -1,13 +1,11 @@
-:host {
+.home-container {
     display: flex;                     /* Use flexbox for centering */
     justify-content: center;           /* Center horizontally */
     align-items: center;               /* Center vertically */
     height: 100vh;                     /* Full height of the viewport */
-    color: #ffffff;                    /* Set text color (optional) */
-  }
-  
-  p {
-    margin: 0;                         /* Remove default margin */
-    font-size: 1.5em;                 /* Optional: Adjust font size */
-  }
+    color: #ffffff;    
+}
+
+
+
   
