@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { getAuth, signInWithEmailAndPassword } from 'firebase/auth';
+import { getAuth, GoogleAuthProvider, signInWithEmailAndPassword, signInWithPopup } from 'firebase/auth';
 
 @Component({
   selector: 'app-splashscreen',
@@ -22,6 +22,20 @@ export class SplashscreenComponent {
       .catch((error) => {
         this.errorMessage = 'Login failed: ' + error.message;
         console.error('Login error:', error);
+      });
+  }
+  googleSignIn() {
+    const auth = getAuth();
+    const provider = new GoogleAuthProvider();
+
+    signInWithPopup(auth, provider)
+      .then(result => {
+        console.log('Google user logged in:', result.user.email);  // Log user email to confirm Google login
+        // Perform any additional logic after login, such as navigation
+      })
+      .catch(error => {
+        this.errorMessage = 'Google Sign-In failed: ' + error.message;
+        console.error('Error during Google Sign-In:', error);
       });
   }
 }
