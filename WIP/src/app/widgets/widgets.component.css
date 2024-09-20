@@ -12,11 +12,12 @@
   }
   
   .widget {
-    background-color: #b95a5a;         /* Slightly lighter background for individual widgets */
+    background-color: #020202;         /* Slightly lighter background for individual widgets */
     color: #ffffff;                    /* White text color */
     margin-bottom: 15px;               /* Space between widgets */
-    padding: 15px;                     /* Padding inside each widget */
-    border-radius: 5px;                /* Slightly round the corners */
+    padding: 15px;
+    border: 1px solid white;                    /* Padding inside each widget */
+    border-radius: 6px;                /* Slightly round the corners */
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3); /* Optional shadow for depth */
   }
   

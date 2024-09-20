@@ -1,9 +1,11 @@
+
 <div class="container">
-  <app-sidebar class="sidebar"></app-sidebar> <!-- Left Sidebar -->
+  <app-splashscreen *ngIf="showSplashScreen"></app-splashscreen>
+  <ng-container *ngIf="!showSplashScreen">
+    <app-sidebar class="sidebar"></app-sidebar> <!-- Left Sidebar -->
   
-  <div class="content">
-    <router-outlet></router-outlet> <!-- Middle Content for Pages -->
-  </div>
-  
-  
+    <div class="content">
+      <router-outlet></router-outlet> <!-- Middle Content for Pages -->
+    </div>
+  </ng-container>
 </div>
