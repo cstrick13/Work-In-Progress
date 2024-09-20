@@ -3,7 +3,7 @@
     display: block;                      /* Make the sidebar a block element */
     width: 350px;                       /* Fixed width for the sidebar */
     height: 100vh;                      /* Full height of the viewport */
-    border-right: 1px solid #ffffff;   /* Right border to separate from content */
+    border-right: .1px solid #ffffff;   /* Right border to separate from content */
     position: fixed;                    /* Use fixed positioning to keep it in view */
     left: 0;                            /* Align it to the left */
     top: 0;                             /* Align it to the top */
