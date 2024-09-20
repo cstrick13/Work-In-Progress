@@ -5,10 +5,18 @@ import { HttpClientModule,provideHttpClient,withFetch } from '@angular/common/ht
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
+import { SidebarComponent } from './sidebar/sidebar.component';
+import { WidgetsComponent } from './widgets/widgets.component';
+import { HomeComponent } from './home/home.component';
+import { FeedComponent } from './feed/feed.component';
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    SidebarComponent,
+    WidgetsComponent,
+    HomeComponent,
+    FeedComponent
   ],
   imports: [
     BrowserModule,

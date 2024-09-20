@@ -1,0 +1,31 @@
+/* Widget bar styles */
+:host {
+    display: block;                      /* Make the widget bar a block element */
+    width: 350px;                       /* Fixed width for the widget bar */
+    height: 100vh;                      /* Full height of the viewport */
+    border-left: 1px solid #ffffff;    /* Left border to separate from content */
+    padding: 20px;                     /* Padding inside the widget bar */
+    position: fixed;                 /* Position it absolutely */
+    right: 0;                           /* Align it to the right */
+    top: 0;                             /* Align it to the top */
+    z-index: 1;                         /* Ensure it appears above other elements */
+  }
+  
+  .widget {
+    background-color: #b95a5a;         /* Slightly lighter background for individual widgets */
+    color: #ffffff;                    /* White text color */
+    margin-bottom: 15px;               /* Space between widgets */
+    padding: 15px;                     /* Padding inside each widget */
+    border-radius: 5px;                /* Slightly round the corners */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3); /* Optional shadow for depth */
+  }
+  
+  .widget h3 {
+    margin: 0;                         /* Remove default margin for headings */
+    font-size: 1.2em;                  /* Set font size for headings */
+  }
+  
+  .widget p {
+    margin: 5px 0 0;                  /* Margin for paragraphs within widgets */
+  }
+  
